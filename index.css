@@ -1,0 +1,16 @@
+/* Looking for elements of class blue-border */
+.blue-border {
+    border: 2px solid blue;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+.purple-border {
+    border: 2px solid purple;
+}

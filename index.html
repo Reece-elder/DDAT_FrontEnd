@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My first Bootstrap! </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <h1> My fancy website </h1>
+
+    <!-- Containers are the default 'wrapper' element for anything within Bootstrap -->
+    <!-- Containers are used to ensure your element stretches to the size you have defined, and gives default padding -->
+
+
+    <div class="container">
+        <!-- Rows are the horizontal grouping, allows you to specify a 'row' of content -->
+        <div class="row">
+          <div class="col blue-border">
+            Column
+          </div>
+          <div class="col blue-border">
+            Column
+          </div>
+          <div class="col blue-border">
+            Column
+          </div>
+        </div>
+      </div>
+
+    <!-- Within the grid there are '12' spaces that columns can take up, when you don't specify each column takes an equal amount -->
+    <div class="container">
+        <div class="row">
+            <div class="col green-border">
+                Column 1 (Options bar 2 / 12)
+            </div>
+            <div class="col-7 green-border">
+                Column 2 (Main content 7 / 12)
+            </div>
+            <div class="col-3 green-border">
+                Column 3 (Side bar 3 / 12)
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 red-border">col-xs-8</div>
+            <div class="col-xs-4 red-border">col-xs-4</div>
+          </div>
+        <div class="row">
+          <div class="col-sm-8 red-border">col-sm-8</div>
+          <div class="col-sm-4 red-border">col-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 red-border">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="card-img-top" alt="bootstrap logo">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 red-border">col-md-4</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 red-border">col-lg-8</div>
+            <div class="col-lg-4 red-border">col-lg-4</div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 red-border">col-xl-8</div>
+            <div class="col-xl-4 red-border">col-xl-4</div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-8 red-border">col-xxl-8</div>
+            <div class="col-xxl-4 red-border">col-xxl-4</div>
+          </div>
+      </div>
+
+      <div class="container" id="cardList"> 
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="card-img-top" alt="bootstrap logo">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="card-img-top" alt="bootstrap logo">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="card-img-top" alt="bootstrap logo">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise - Add Bootstrap to a new or existing HTML  -->
+      <!-- Put in a simple grid with 3 columns of differing widths  -->
+      <!-- Add 2+ components from Bootstrap that we haven't covered  -->
+
+      <!-- Stretch goal - Use the breakpoints function to make your page 'responsive' -->
+
+    <!-- Scripts always go on the bottom because they take the longest to load-->
+    <!-- REALLY IMPORTANT that the user DOESNT see a blank screen straight away  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
