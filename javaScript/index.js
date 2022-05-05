@@ -18,4 +18,4 @@
 // The first 60% of the code could work, then it hits a bug and it won't always tell you 
 
 // JavaScript function that takes in a string and creates an alert
-alert("This has changed!");
+// alert("This has changed!");
