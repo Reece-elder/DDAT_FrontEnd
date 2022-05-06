@@ -27,3 +27,11 @@ while(counter < 10){
     console.log(`Counter value: ${counter} !`);      // template literals
     counter++;  // increment counter by 1 
 }
+
+// Create a loop that prints 1 - 10, 10 times each 
+
+for(let i = 0; i < 10; i++){
+    for(let x = 0; x <10; x++){
+        console.log(x + 1);
+    }
+}
