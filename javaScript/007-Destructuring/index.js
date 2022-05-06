@@ -38,5 +38,44 @@ let [a1,b1,...rest] = numArray2;
 
 console.log(a1);
 console.log(b1);
-console.log(c1);
 console.log(rest);
+
+
+// Destructuring Objects
+
+let movie = {
+    title : "starship troopers",
+    rating : 10,
+    genre: "sci-fi"
+};
+
+console.log(movie);
+
+// Looks for a value with this specific attribute name
+let {title, genre} = movie;
+console.log(`Title: ${title} and genre: ${genre}`);
+
+// I wanted to pull a value from the object but give it a different name 
+let {rating: score} = movie;
+console.log(score);
+
+// Destructuring nested objects 
+let cinema = {
+    screens: 12,
+    location: "newport",
+    bestSellingMovie : { 
+        title : "starship troopers",
+        rating : 10,
+        genre: "sci-fi"
+    }
+}
+
+// Screen number, movie : title, movie : rating
+// screens - direct destructure
+// destructure the nested object, renamed title -> movieTitle
+// pulled the rating score 
+let {screens, bestSellingMovie: {title: movieTitle, rating}} = cinema;
+console.log(screens, movieTitle, rating);
+
+
+
